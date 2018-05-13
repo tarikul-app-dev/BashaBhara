@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "323396251868",
+    "firebase_url": "https://bashabhara-8e66c.firebaseio.com",
+    "project_id": "bashabhara-8e66c",
+    "storage_bucket": "bashabhara-8e66c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323396251868:android:71f1c174cac39455",
+        "android_client_info": {
+          "package_name": "com.example.tarikul.bashabhara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323396251868-7sqpu43b7m7it1tdkfjhk9inbpcrf609.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJG5o1IyX9WvPmFE6YQE1vIxBbLCXWWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

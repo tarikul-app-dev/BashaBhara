@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="#009a9a">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_insert"
+            android:title="Insert Bike Info"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_check"
+            android:title="check Bike Info"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title=""
+        android:textColorHint="#d9e5f3"
+        android:textColor="#fff"
+        android:background="#009a9a">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="" />
+        </menu>
+    </item>
+
+</menu>

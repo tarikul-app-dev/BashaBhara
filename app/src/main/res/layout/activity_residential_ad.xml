@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tarikul.bashabhara.activity.ResidentialAdAct">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradiant11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Create Residential Ad"
+                android:textSize="20dp"
+                android:background="@drawable/gradiant11"
+                android:textColor="#d9e5f3"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/textup"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textColor="#d9e5f3"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginLeft="35dp"
+                >
+                <EditText
+                    android:id="@+id/edt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#d9e5f3"
+                    android:textColorHint="#FFF"
+                    android:textSize="14dp"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Division:"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="14dp"
+                    >
+                    <Spinner
+                        android:id="@+id/spin_division"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:entries="@array/division"
+                        android:layout_gravity="center"
+                        >
+
+                    </Spinner>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="District:"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="17dp"
+                    >
+                    <Spinner
+                        android:id="@+id/spin_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thana:"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="21dp"
+                    >
+                    <Spinner
+                        android:id="@+id/spin_thana"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area:"
+                    android:textColor="#d9e5f3" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="32dp"
+                    >
+                    <Spinner
+                        android:id="@+id/spin_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        >
+                    </Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="08dp"
+                android:layout_marginTop="05dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/edt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="address"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#d9e5f3"
+                        android:textColorHint="#FFF"
+                        android:textSize="14dp"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="05dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rent:"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/edt_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="rent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#d9e5f3"
+                        android:textColorHint="#FFF"
+                        android:textSize="14dp"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="05dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size:"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/edt_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="size"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#d9e5f3"
+                        android:textColorHint="#FFF"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="05dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrip:"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/edt_descrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="description"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#d9e5f3"
+                        android:textColorHint="#FFF"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txv_drawing_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drawing Room:"
+                    android:layout_marginTop="02dp"
+                    android:textColor="#d9e5f3"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <RadioGroup
+                        android:id="@+id/rg_drawing_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/btn_drawing_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes"
+                            android:textColor="#d9e5f3"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/btn_drawing_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="No"
+                            android:textColor="#d9e5f3"
+                            />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txv_dinining_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dinning Room:"
+                    android:layout_marginTop="02dp"
+                    android:textColor="#d9e5f3"
+
+                    />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+
+                <RadioGroup
+                    android:id="@+id/rg_dinning_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/btn_dinning_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:textColor="#d9e5f3"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/btn_dinning_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="No"
+                        android:textColor="#d9e5f3"
+                        />
+
+
+                </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txv_car_parking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Parking:"
+                    android:layout_marginTop="02dp"
+                    android:textColor="#d9e5f3"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                <RadioGroup
+                    android:id="@+id/rg_car_parking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/btn_car_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:textColor="#d9e5f3"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/btn_car_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="No"
+                        android:textColor="#d9e5f3"
+                        />
+
+
+                </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txv_lift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lift:"
+                    android:layout_marginTop="02dp"
+                    android:textColor="#d9e5f3"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                <RadioGroup
+                    android:id="@+id/rg_lift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/btn_lift_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:textColor="#d9e5f3"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/btn_lift_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="No"
+                        android:textColor="#d9e5f3"
+                        />
+
+
+                </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txv_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gas:"
+                    android:layout_marginTop="02dp"
+                    android:textColor="#d9e5f3"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                <RadioGroup
+                    android:id="@+id/rg_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/btn_gas_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:textColor="#d9e5f3"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/btn_gas_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="No"
+                        android:textColor="#d9e5f3"
+                        />
+
+
+                </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txv_generator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generator:"
+                    android:layout_marginTop="02dp"
+                    android:textColor="#d9e5f3"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="10dp"
+                    >
+                <RadioGroup
+                    android:id="@+id/rg_generator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/btn_generator_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:textColor="#d9e5f3"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/btn_generator_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="No"
+                        android:textColor="#d9e5f3"
+                        />
+
+
+                </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txv_electric_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electric Bill:"
+                    android:layout_marginTop="02dp"
+                    android:textColor="#d9e5f3"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginRight="10dp"
+                    >
+                <RadioGroup
+                    android:id="@+id/rg_electric_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/btn_excluding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excluding"
+                        android:textColor="#d9e5f3"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/btn_including"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="Including"
+                        android:textColor="#d9e5f3"
+                        />
+
+
+                </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#d9e5f3"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chk_family_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family House"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="#d9e5f3"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chk_bachelor_mess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bachelor Mess"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15dp"
+                    android:textColor="#d9e5f3"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chk_female_mess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female mess"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15dp"
+                    android:textColor="#d9e5f3"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chk_sublet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sublet"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15dp"
+                    android:textColor="#d9e5f3"
+                    />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textColor="#d9e5f3"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="05dp"
+                >
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:textColor="#d9e5f3"
+                android:textColorHint="#FFF"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="05dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picture:"
+                android:textColor="#d9e5f3"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="05dp"
+                >
+                <Button
+                    android:id="@+id/btn_take_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@android:color/holo_red_light"
+                    android:text="Take Photo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/txv_pic_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="05dp"
+                    android:text="image text"
+                    android:layout_gravity="center"
+                    android:textColor="#d9e5f3"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Save"
+
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
